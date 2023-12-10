@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import logo from '../../images/logo.png';
 import './Header.css';
 const Header = () => {
