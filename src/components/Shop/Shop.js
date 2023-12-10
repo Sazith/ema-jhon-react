@@ -3,10 +3,11 @@ import './Shop.css'
 import Product from '../Product/Product';
 import Cart from '../Cart/Cart';
 const Shop = () => {
+  const BaseURL = 'https://raw.githubusercontent.com/ProgrammingHero1/ema-john-simple-resources/master/fakeData/products.JSON';
   const [products,setProducts] = useState([]);
   const [cart, setCart] = useState([])
   useEffect((() =>{
-    fetch('https://raw.githubusercontent.com/ProgrammingHero1/ema-john-simple-resources/master/fakeData/products.JSON')
+    fetch(BaseURL)
     .then(res => res.json())
     .then(data => setProducts(data)
     )
